@@ -1,0 +1,5 @@
+# Set the udev rule for Arduino uno
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="arduino_uno", MODE="0666"
+
+# Set CH340 UART
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="ch340_uart", MODE="0666"
