@@ -1,0 +1,2 @@
+# Set Raspberry Pi GPIO UART as /dev/gpio_uart
+SUBSYSTEM=="tty", KERNEL=="ttyAMA0", SYMLINK+="gpio_uart", GROUP="dialout", MODE="0660"
